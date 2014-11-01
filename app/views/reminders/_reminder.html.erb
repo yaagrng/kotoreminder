@@ -1,0 +1,13 @@
+<li>
+  <span class="content"><%= reminder.content %></span>
+  <span class="timestamp">
+    <%= reminder.time.to_s[0, 4].to_i %>年
+    <%= reminder.time.to_s[4, 2].to_i %>月
+    <%= reminder.time.to_s[6, 2].to_i %>日
+    <%= reminder.time.to_s[8, 2].to_i %>時
+    <%= reminder.time.to_s[10,2].to_i %>分にリマインドします
+  </span>
+  <%= link_to "削除", reminder, method: :delete,
+                                data: { confirm: "消しちゃうよ？" },
+                                title: reminder.content %>
+</li>

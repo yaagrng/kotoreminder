@@ -1,0 +1,5 @@
+<h1><%= @user.name %></h1>
+<h3>あなたへのリマインダーは現在<%= @user.reminders.count %>件です</h3>
+<ol class="reminders">
+  <%= render @reminders %>
+</ol>

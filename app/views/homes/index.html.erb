@@ -1,0 +1,21 @@
+<div class="center hero-unit">
+  <h1>ようこそ、ことリマインダーへ</h1>
+
+  <h2>
+    ことリマインダーはあなたの大切な用事をリマインドします(・8・)
+  </h2>
+
+  <% if @current_user.nil? %>
+    <%= link_to "いますぐログイン！", "/auth/twitter", class: "btn btn-large btn-primary" %>
+  <% end %>
+</div>
+<div class="page-header">
+  <h3>ことリマインダーの使い方</h3>
+</div>
+<p>
+  あなたは<a href=https://twitter.com/kotoreminder>@kotoreminder</a>
+  にリマインダーしてほしい時間と内容をツイートするだけ
+</p>
+<p>
+  より分かりやすく詳しい説明は<a href=#>こちら</a>へどうぞ
+</p>
